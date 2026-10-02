@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Sushi & Ramen Bowl</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container nav-inner">
+
+            <a class="brand" href="#">
+                <span class="brand-mark">
+                    <img src="images/Logo-1.5x.png" alt="Min Sushi &amp; Ramen Bowl">
+                </span>
+                <span class="brand-name">
+                    Min Sushi <em>&amp;</em><br>
+                    Ramen Bowl
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-label="Open navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#story">OUR STORY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+
+                <a class="btn order-btn" href="#menu">ORDER ONLINE</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="row align-items-center hero-row">
+                <div class="col-lg-6 hero-copy">
+                    <div class="eyebrow">YOUR ONLINE SUSHI RESTAURANT</div>
+
+                    <h1>
+                        Pure ingredients,<br>
+                        immaculate<br>
+                        precision
+                    </h1>
+
+                    <p class="hero-text">
+                        Rolled to order everyday with fish we'd happily eat ourselves.<br>
+                        Delivered to your door in about 11:00AM.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn primary-btn">START YOUR ORDER</a>
+                        <a href="#menu" class="btn secondary-btn">SEE THE FULL MENU</a>
+                    </div>
+
+                    <div class="hero-note">
+                        100+ reviews on Google · Free delivery over $49 · Ready in 11:00AM
+                    </div>
+                </div>
+
+                <div class="col-lg-6 product-column">
+                    <div class="hero-visual " aria-label="Featured bowl product">
+                         <div class="visual-red">
+                            <div class="food-circle">
+                                <img id="food-circle-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Pork bowl">
+                            </div>
+                        </div>
+                        <div class="visual-white">
+                            <img id="panel-photo-white" class="panel-photo" src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400&q=80" alt="Shoyu ramen bowl">
+                        </div>
+                        <div class="visual-red visual-red-middle" aria-hidden="true">
+                            <img id="panel-photo-red" class="panel-photo" src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=400&q=80" alt="">
+                        </div>
+                        <div class="visual-yellow">
+                            <img id="panel-photo-yellow" class="panel-photo" src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=400&q=80" alt="Ramen bowl">
+                        </div>
+                       
+                    </div>
+
+                    <div class="product-info">
+                        <div>
+                            <span class="chef-choice">CHEF'S CHOICE</span>
+                            <h2 id="slide-title">Pork Bowl (Sushi rice) <strong id="slide-price">$20.79</strong></h2>
+                        </div>
+
+                        <div class="slider-buttons">
+                            <button type="button" id="btn-prev" aria-label="Previous">←</button>
+                            <button type="button" id="btn-next" aria-label="Next">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-section" id="story">
+        <div class="container vision-wrap">
+            <div class="vision-header">
+                <span class="section-label">OUR VISION</span>
+                <h2>Why we do sushi this way</h2>
+                <p>
+                    We started <strong>Min Sushi and Ramen Bowl</strong> with a simple idea: great sushi shouldn't only happen on special
+                    occasions. So we kept the care; the daily fish run, the hand-pressed rice, the chef who's been doing this for 10
+                    years and dropped everything else. No stiff dining rooms. No menus you need translated.
+                </p>
+            </div>
+
+            <div class="vision-grid" id="menu">
+                <article class="vision-card light-card">
+                    <div class="bowl-art bowl-left" aria-hidden="true">
+                        <span class="sticks"></span>
+                        <span class="noodles"></span>
+                        <span class="bowl"></span>
+                    </div>
+                    <h3>Fresh meat daily</h3>
+                    <p>Our fish arrives every morning and we only prep what we'll serve that day. What doesn't sell doesn't come back.</p>
+                </article>
+
+                <article class="vision-card red-card">
+                    <div class="bowl-art bowl-center" aria-hidden="true">
+                        <span class="sticks"></span>
+                        <span class="noodles"></span>
+                        <span class="bowl"></span>
+                    </div>
+                    <h3>Made when you order</h3>
+                    <p>Nothing sits under a light waiting for you. Your rolls are cut and boxed the moment your order lands.</p>
+                </article>
+
+                <article class="vision-card light-card">
+                    <div class="bowl-art bowl-right" aria-hidden="true">
+                        <span class="sticks"></span>
+                        <span class="noodles"></span>
+                        <span class="bowl"></span>
+                    </div>
+                    <h3>Packed to travel</h3>
+                    <p>Chilled boxes, separated sauces, rice that's still soft when it reaches you. We tested a lot of containers.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-showcase" aria-label="Menu">
+        <div class="container menu-wrap">
+            <div class="menu-heading">
+                <span>Enjoy our delicious sushi and bowls</span>
+                <h2>Explore our menu</h2>
+                <p>Everything's made fresh in our kitchen. Browse by category, or search if you already know what you want.</p>
+            </div>
+
+            <div class="menu-row">
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Shoyu Ramen Bowl">
+                    </div>
+                    <h3>Shoyu Ramen Bowl</h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <span class="badge">#2 MOST LIKED ITEM</span>
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Orange Chicken Rice Bowl">
+                    </div>
+                    <h3>Orange Chicken Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80" alt="Teriyaki Beef Rice Bowl">
+                    </div>
+                    <h3>Teriyaki Beef Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=80" alt="Spicy Poke Bowl">
+                    </div>
+                    <h3>Spicy Poke Bowl <span>(Sushi Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+            </div>
+             <div class="menu-row">
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Shoyu Ramen Bowl">
+                    </div>
+                    <h3>Shoyu Ramen Bowl</h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <span class="badge">#2 MOST LIKED ITEM</span>
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Orange Chicken Rice Bowl">
+                    </div>
+                    <h3>Orange Chicken Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80" alt="Teriyaki Beef Rice Bowl">
+                    </div>
+                    <h3>Teriyaki Beef Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=900&q=80" alt="Spicy Poke Bowl">
+                    </div>
+                    <h3>Spicy Poke Bowl <span>(Sushi Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+            </div>
+
+
+            <div class="menu-row second-row">
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=900&q=80" alt="Shoyu Ramen Bowl 2">
+                    </div>
+                    <h3>Shoyu Ramen Bowl</h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=900&q=80" alt="Orange Chicken Rice Bowl 2">
+                    </div>
+                    <h3>Orange Chicken Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://i.pinimg.com/1200x/5c/4d/48/5c4d48e068e3039e8b3a09255c193600.jpg" alt="Teriyaki Beef Rice Bowl 2">
+                    </div>
+                    <h3>Teriyaki Beef Rice Bowl<br><span>(Jasmine Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+
+                <article class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Spicy Poke Bowl 2">
+                    </div>
+                    <h3>Spicy Poke Bowl <span>(Sushi Rice)</span></h3>
+                    <div class="price">$28</div>
+                </article>
+            </div>
+
+            <div class="menu-cta-wrap">
+                <a href="#" class="menu-cta">See full menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section" aria-label="Guest reviews">
+        <div class="container reviews-wrap">
+            <div class="reviews-heading">
+                <span>Guest Reviews</span>
+                <h2>What our guests are saying</h2>
+                <p>Sample placeholder content for Google Reviews integration. Please replace with verified reviews from your restaurant's Google Business Profile.</p>
+            </div>
+
+            <div class="review-grid">
+                <article class="review-card">
+                    <div class="review-avatar">A</div>
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★ <span>5.0</span></div>
+                    <p>“The atmosphere is serene and intimate. Service is attentive and knowledgeable. Highly recommend the signature omakase experience.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Alex Chen</span>
+                        <span class="review-date">• Oct 12, 2023</span>
+                    </div>
+                    <div class="review-source">Google reviews</div>
+                    <a href="#" class="review-link">Read original review →</a>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-avatar">S</div>
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★ <span>5.0</span></div>
+                    <p>“The quality of the fish is exceptional. The presentation is beautiful, but the taste is what truly stands out. A must-visit for any sushi lover.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Sarah Jenkins</span>
+                        <span class="review-date">• Sep 26, 2023</span>
+                    </div>
+                    <div class="review-source">Google reviews</div>
+                    <a href="#" class="review-link">Read original review →</a>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-avatar">M</div>
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★ <span>5.0</span></div>
+                    <p>“The service was impeccable. Our server was very knowledgeable about the menu and helped us choose the perfect pairing for our meal.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Michael T.</span>
+                        <span class="review-date">• Aug 15, 2023</span>
+                    </div>
+                    <div class="review-source">Google reviews</div>
+                    <a href="#" class="review-link">Read original review →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer" id="contact">
+        <div class="container footer-top">
+            <div class="brand-block">
+                <div class="footer-brand-mark">
+                    <img src="images/Logo-1.5x.png" alt="">
+                </div>
+                <div class="footer-brand-name">Min Sushi <em>&amp;</em> Ramen Bowl</div>
+                <p class="footer-description">Japan's premier sushi dining experience, crafted with centuries-old technique and modern precision.</p>
+                <div class="footer-est">EST. 2020 · NEW YORK</div>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-column">
+                    <span class="footer-label">Opening Hours</span>
+                    <div>11:30 AM – 08:30 PM</div>
+                    <div>Opens everyday</div>
+                </div>
+                <div class="footer-column">
+                    <span class="footer-label">Contact</span>
+                    <div>519 US-1 #5, York, ME</div>
+                    <div>03903, United States</div>
+                    <div>+12037581112</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 Min Sushi &amp; Ramen Bowl Co., Ltd. All Rights Reserved.</span>
+                <span>伝統と革新 · Tradition &amp; Innovation</span>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* ── Hero product slider – 4 items ───────────────────────────── */
+  const BASE = 'https://images.unsplash.com/';
+  const slides = [
+    {
+    circle: BASE + 'photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80',
+      white:  BASE + 'photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=400&q=80',
+            red:    BASE + 'photo-1553621042-f6e147245754?auto=format&fit=crop&w=400&q=80',
+      yellow: BASE + 'photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=400&q=80',
+      name:   'Pork Bowl',
+      sub:    'Sushi rice',
+      price:  '$20.79'
+    },
+    {
+      circle: BASE + 'photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80',
+      white:  BASE + 'photo-1553621042-f6e147245754?auto=format&fit=crop&w=400&q=80',
+    red:    BASE + 'photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80',
+      yellow: BASE + 'photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=400&q=80',
+      name:   'Shoyu Ramen Bowl',
+      sub:    '',
+      price:  '$28.00'
+    },
+    {
+      circle: BASE + 'photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80',
+      white:  BASE + 'photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80',
+    red:    BASE + 'photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=400&q=80',
+      yellow: BASE + 'photo-1553621042-f6e147245754?auto=format&fit=crop&w=400&q=80',
+      name:   'Spicy Poke Bowl',
+      sub:    'Sushi Rice',
+      price:  '$28.00'
+    },
+    {
+      circle: BASE + 'photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80',
+      white:  BASE + 'photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=400&q=80',
+    red:    BASE + 'photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=400&q=80',
+      yellow: BASE + 'photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80',
+      name:   'Teriyaki Beef Rice Bowl',
+      sub:    'Jasmine Rice',
+      price:  '$28.00'
+    }
+  ];
+
+  let current = 0;
+
+  const circleImg  = document.getElementById('food-circle-img');
+  const whiteImg   = document.getElementById('panel-photo-white');
+    const redImg     = document.getElementById('panel-photo-red');
+  const yellowImg  = document.getElementById('panel-photo-yellow');
+  const titleEl    = document.getElementById('slide-title');
+  const priceEl    = document.getElementById('slide-price');
+  const visualRed  = document.querySelector('.visual-red');
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    const s = slides[current];
+
+    /* fade out */
+    visualRed.style.transition = 'opacity 0.25s ease';
+    visualRed.style.opacity = '0';
+
+    setTimeout(() => {
+      circleImg.src  = s.circle;
+      whiteImg.src   = s.white;
+    redImg.src     = s.red;
+      yellowImg.src  = s.yellow;
+
+      const sub = s.sub ? ` (${s.sub})` : '';
+      /* keep the <strong> for the price */
+      titleEl.childNodes[0].textContent = s.name + sub + ' ';
+      priceEl.textContent = s.price;
+
+      /* fade in */
+      visualRed.style.opacity = '1';
+    }, 250);
+  }
+
+  document.getElementById('btn-prev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('btn-next').addEventListener('click', () => goTo(current + 1));
+</script>
+</body>
+</html>
